@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template Inheritance</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="{% static 'css/myfile.css' %}" rel="stylesheet"/>
+</head>
+<body style="background-image:url(https://cdn.pixabay.com/photo/2015/06/19/21/24/the-road-815297__340.jpg)">
+<nav class="navbar navbar-default navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+           <a class="navbar-brand" href="/">Django NareshIt</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a> </li>
+            <li class="active"><a href="/Sports">Sports</a> </li>
+            <li class="active"><a href="/News">News</a> </li>
+            <li class="active"><a href="/Courses">Courses</a> </li>
+        </ul>
+    </div>
+</nav>
+{% block body-block %}
+{% endblock %}
+</body>
+</html>
